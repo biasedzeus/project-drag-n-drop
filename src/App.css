@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+/* .main-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.droppbale-container{
+    padding: 4;
+    width: 250;
+    min-height: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.draggable-container{
+    user-select: none;
+    padding: 16;
+    margin: 0 0 8px 0;
+    color:white;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+} */
+
+
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.App .column{
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.droppable-col{
+  width: 100%;
+  min-height: 50px;
+  background-color: #e3e3ef;
+  padding: 10px 10px 0px 10px;
+  /* display: flex;
+  flex-direction: column; */
+
+}
+.item{
+  margin-bottom: 10px;
+  /* color: white; */
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 5px;
+
+
+}
+.item.dragging{
+  background-color: yellowgreen;
+}
+
+
+/* //card */
+.span-projectID{
+  font-weight: 100;
 }
